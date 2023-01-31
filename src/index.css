@@ -5,3 +5,7 @@
 body {
   @apply font-roboto;
 }
+
+.heroHeadingGradient {
+  background-image: linear-gradient(90deg, #857bf8, #54e694);
+}

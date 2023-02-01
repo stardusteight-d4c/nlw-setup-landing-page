@@ -4,7 +4,7 @@ interface Props {}
 
 export const Navbar = (props: Props) => {
   return (
-    <nav className="text-[#C4C4CC] mx-auto max-w-7xl px-14 py-4 flex items-center justify-between">
+    <nav className="text-[#C4C4CC] mx-auto max-w-7xl px-4 hidden lg:px-14 py-4 md:flex items-center justify-between">
       <ul className="flex items-center gap-x-6">
         <li className="hover:text-[#54E694] transition-colors cursor-pointer py-1 pr-1">
           Sobre

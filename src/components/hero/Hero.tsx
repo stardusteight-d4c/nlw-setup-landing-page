@@ -20,12 +20,11 @@ export const Hero = (props: Props) => {
   })
 
   return (
-    <header className="w-screen md:h-screen bg-app bg-cover bg-no-repeat relative">
-      {/* <img src={backgroud} className="absolute object-cover inset-0 -z-10" /> */}
+    <header className="bg-hero w-screen h-full md:max-h-fit bg-cover bg-no-repeat">
       <div>
         <Navbar />
         <div className="flex flex-col lg:flex-row items-start pt-[82px] w-full max-w-7xl px-4 lg:pl-4 lg:pr-10 mx-auto">
-          <div className="flex w-full mb-8 lg:mb-0 flex-col md:flex-row justify-between lg:flex-col items-center lg:w-[50%] mr-[60px]">
+          <div className="flex w-full mb-8 lg:mb-0 flex-col md:flex-row justify-between lg:flex-col items-center lg:w-[50%] mr-[30px]">
             <img
               src={logo}
               alt="nlw-setup/logo"
@@ -75,7 +74,7 @@ export const Hero = (props: Props) => {
             </h2>
             <div
               style={gridContainer(minWith768px)}
-              className="grid gap-9 grid-rows-3 md:grid-rows-2 !w-full justify-center md:justify-start items-center mt-[32px]"
+              className="grid gap-x-0 gap-y-9 grid-rows-3 md:grid-rows-2 !w-full justify-center md:justify-start items-center mt-[32px]"
             >
               <span className="flex flex-col sm:mx-auto md:mx-0 text-sm col-span-1 row-span-1 row-start-2 md:row-start-1 uppercase font-sm !leading-6 text-[#C4C4CC] font-jetBrainsMono sm:flex-row items-center gap-x-4">
                 <img src={calendarIcon} />
@@ -132,8 +131,6 @@ export const Hero = (props: Props) => {
 }
 
 const gridContainer = (isMinWidth768px: boolean) => {
-  console.log(isMinWidth768px)
-
   if (isMinWidth768px) {
     return { gridTemplateColumns: '1fr 2.5fr' }
   } else {

@@ -42,50 +42,266 @@ export const About = (props: Props) => {
             </button>
           </div>
         </div>
-        <div className="h-[92px] relative w-full bg-[#373D98] flex items-center">
-          <div className="flex items-center gap-x-6 animate-marquee">
-            <span className="whitespace-nowrap text-[20px] flex items-center !leading-[140%] font-bold">
-              De 16/01 — 20/01
-            </span>
-            <img src={tag} />
-            <span className="whitespace-nowrap text-[20px] flex items-center !leading-[140%] font-bold">
-              evento online
-            </span>
-            <img src={tag} />
-            <span className="whitespace-nowrap text-[20px] flex items-center !leading-[140%] font-bold">
-              participe gratuitamente
-            </span>
-            <img src={tag} />
-            <span className="whitespace-nowrap text-[20px] flex items-center !leading-[140%] font-bold">
-              De 16/01 — 20/01
-            </span>
-            <img src={tag} />
-            <span className="whitespace-nowrap text-[20px] flex items-center !leading-[140%] font-bold">
-              evento online
-            </span>
-            <img src={tag} />
-          </div>
-          <div className="absolute flex items-center gap-x-6 animate-marquee2">
-            <span className="whitespace-nowrap ml-6 text-[20px] flex items-center !leading-[140%] font-bold">
-              De 16/01 — 20/01
-            </span>
-            <img src={tag} />
-            <span className="whitespace-nowrap text-[20px] flex items-center !leading-[140%] font-bold">
-              evento online
-            </span>
-            <img src={tag} />
-            <span className="whitespace-nowrap text-[20px] flex items-center !leading-[140%] font-bold">
-              participe gratuitamente
-            </span>
-            <img src={tag} />
-            <span className="whitespace-nowrap text-[20px] flex items-center !leading-[140%] font-bold">
-              De 16/01 — 20/01
-            </span>
-            <img src={tag} />
-            <span className="whitespace-nowrap text-[20px] flex items-center !leading-[140%] font-bold">
-              evento online
-            </span>
-            <img src={tag} />
+        <div className="h-[92px] w-fit justify-center relative bg-[#373D98] flex items-center">
+          <div className="flex w-fit whitespace-nowrap animate-marquee">
+            <div className="min-w-fit max-w-fit">
+              <span className="text-[20px] flex items-center !leading-[140%] font-bold">
+                De 16/01 — 20/01
+                <img src={tag} className="mx-7" />
+              </span>
+            </div>
+            <div className="min-w-fit max-w-fit">
+              <span className="text-[20px] flex items-center !leading-[140%] font-bold">
+                evento online
+                <img src={tag} className="mx-7" />
+              </span>
+            </div>
+            <div className="min-w-fit max-w-fit">
+              <span className="text-[20px] flex items-center !leading-[140%] font-bold">
+                participe gratuitamente
+                <img src={tag} className="mx-7" />
+              </span>
+            </div>
+            <div className="min-w-fit max-w-fit">
+              <span className="text-[20px] flex items-center !leading-[140%] font-bold">
+                De 16/01 — 20/01
+                <img src={tag} className="mx-7" />
+              </span>
+            </div>
+            <div className="min-w-fit max-w-fit">
+              <span className="text-[20px] flex items-center !leading-[140%] font-bold">
+                evento online
+                <img src={tag} className="mx-7" />
+              </span>
+            </div>
+            <div className="min-w-fit max-w-fit">
+              <span className="text-[20px] flex items-center !leading-[140%] font-bold">
+                participe gratuitamente
+                <img src={tag} className="mx-7" />
+              </span>
+            </div>
+            <div className="min-w-fit max-w-fit">
+              <span className="text-[20px] flex items-center !leading-[140%] font-bold">
+                De 16/01 — 20/01
+                <img src={tag} className="mx-7" />
+              </span>
+            </div>
+            <div className="min-w-fit max-w-fit">
+              <span className="text-[20px] flex items-center !leading-[140%] font-bold">
+                evento online
+                <img src={tag} className="mx-7" />
+              </span>
+            </div>
+            <div className="min-w-fit max-w-fit">
+              <span className="text-[20px] flex items-center !leading-[140%] font-bold">
+                participe gratuitamente
+                <img src={tag} className="mx-7" />
+              </span>
+            </div>
+            <div className="min-w-fit max-w-fit">
+              <span className="text-[20px] flex items-center !leading-[140%] font-bold">
+                De 16/01 — 20/01
+                <img src={tag} className="mx-7" />
+              </span>
+            </div>
+            <div className="min-w-fit max-w-fit">
+              <span className="text-[20px] flex items-center !leading-[140%] font-bold">
+                evento online
+                <img src={tag} className="mx-7" />
+              </span>
+            </div>
+            <div className="min-w-fit max-w-fit">
+              <span className="text-[20px] flex items-center !leading-[140%] font-bold">
+                participe gratuitamente
+                <img src={tag} className="mx-7" />
+              </span>
+            </div>
+            <div className="min-w-fit max-w-fit">
+              <span className="text-[20px] flex items-center !leading-[140%] font-bold">
+                De 16/01 — 20/01
+                <img src={tag} className="mx-7" />
+              </span>
+            </div>
+            <div className="min-w-fit max-w-fit">
+              <span className="text-[20px] flex items-center !leading-[140%] font-bold">
+                De 16/01 — 20/01
+                <img src={tag} className="mx-7" />
+              </span>
+            </div>
+            <div className="min-w-fit max-w-fit">
+              <span className="text-[20px] flex items-center !leading-[140%] font-bold">
+                evento online
+                <img src={tag} className="mx-7" />
+              </span>
+            </div>
+            <div className="min-w-fit max-w-fit">
+              <span className="text-[20px] flex items-center !leading-[140%] font-bold">
+                participe gratuitamente
+                <img src={tag} className="mx-7" />
+              </span>
+            </div>
+            <div className="min-w-fit max-w-fit">
+              <span className="text-[20px] flex items-center !leading-[140%] font-bold">
+                De 16/01 — 20/01
+                <img src={tag} className="mx-7" />
+              </span>
+            </div>
+            <div className="min-w-fit max-w-fit">
+              <span className="text-[20px] flex items-center !leading-[140%] font-bold">
+                evento online
+                <img src={tag} className="mx-7" />
+              </span>
+            </div>
+            <div className="min-w-fit max-w-fit">
+              <span className="text-[20px] flex items-center !leading-[140%] font-bold">
+                participe gratuitamente
+                <img src={tag} className="mx-7" />
+              </span>
+            </div>
+            <div className="min-w-fit max-w-fit">
+              <span className="text-[20px] flex items-center !leading-[140%] font-bold">
+                De 16/01 — 20/01
+                <img src={tag} className="mx-7" />
+              </span>
+            </div>
+            <div className="min-w-fit max-w-fit">
+              <span className="text-[20px] flex items-center !leading-[140%] font-bold">
+                evento online
+                <img src={tag} className="mx-7" />
+              </span>
+            </div>
+            <div className="min-w-fit max-w-fit">
+              <span className="text-[20px] flex items-center !leading-[140%] font-bold">
+                participe gratuitamente
+                <img src={tag} className="mx-7" />
+              </span>
+            </div>
+            <div className="min-w-fit max-w-fit">
+              <span className="text-[20px] flex items-center !leading-[140%] font-bold">
+                De 16/01 — 20/01
+                <img src={tag} className="mx-7" />
+              </span>
+            </div>
+            <div className="min-w-fit max-w-fit">
+              <span className="text-[20px] flex items-center !leading-[140%] font-bold">
+                evento online
+                <img src={tag} className="mx-7" />
+              </span>
+            </div>
+            <div className="min-w-fit max-w-fit">
+              <span className="text-[20px] flex items-center !leading-[140%] font-bold">
+                participe gratuitamente
+                <img src={tag} className="mx-7" />
+              </span>
+            </div>
+            <div className="min-w-fit max-w-fit">
+              <span className="text-[20px] flex items-center !leading-[140%] font-bold">
+                De 16/01 — 20/01
+                <img src={tag} className="mx-7" />
+              </span>
+            </div>
+            <div className="min-w-fit max-w-fit">
+              <span className="text-[20px] flex items-center !leading-[140%] font-bold">
+                evento online
+                <img src={tag} className="mx-7" />
+              </span>
+            </div>
+            <div className="min-w-fit max-w-fit">
+              <span className="text-[20px] flex items-center !leading-[140%] font-bold">
+                participe gratuitamente
+                <img src={tag} className="mx-7" />
+              </span>
+            </div>
+            <div className="min-w-fit max-w-fit">
+              <span className="text-[20px] flex items-center !leading-[140%] font-bold">
+                De 16/01 — 20/01
+                <img src={tag} className="mx-7" />
+              </span>
+            </div>
+            <div className="min-w-fit max-w-fit">
+              <span className="text-[20px] flex items-center !leading-[140%] font-bold">
+                evento online
+                <img src={tag} className="mx-7" />
+              </span>
+            </div>
+            <div className="min-w-fit max-w-fit">
+              <span className="text-[20px] flex items-center !leading-[140%] font-bold">
+                participe gratuitamente
+                <img src={tag} className="mx-7" />
+              </span>
+            </div>
+            <div className="min-w-fit max-w-fit">
+              <span className="text-[20px] flex items-center !leading-[140%] font-bold">
+                De 16/01 — 20/01
+                <img src={tag} className="mx-7" />
+              </span>
+            </div>
+            <div className="min-w-fit max-w-fit">
+              <span className="text-[20px] flex items-center !leading-[140%] font-bold">
+                evento online
+                <img src={tag} className="mx-7" />
+              </span>
+            </div>
+            <div className="min-w-fit max-w-fit">
+              <span className="text-[20px] flex items-center !leading-[140%] font-bold">
+                participe gratuitamente
+                <img src={tag} className="mx-7" />
+              </span>
+            </div>
+            <div className="min-w-fit max-w-fit">
+              <span className="text-[20px] flex items-center !leading-[140%] font-bold">
+                De 16/01 — 20/01
+                <img src={tag} className="mx-7" />
+              </span>
+            </div>
+            <div className="min-w-fit max-w-fit">
+              <span className="text-[20px] flex items-center !leading-[140%] font-bold">
+                evento online
+                <img src={tag} className="mx-7" />
+              </span>
+            </div>
+            <div className="min-w-fit max-w-fit">
+              <span className="text-[20px] flex items-center !leading-[140%] font-bold">
+                participe gratuitamente
+                <img src={tag} className="mx-7" />
+              </span>
+            </div>
+            <div className="min-w-fit max-w-fit">
+              <span className="text-[20px] flex items-center !leading-[140%] font-bold">
+                De 16/01 — 20/01
+                <img src={tag} className="mx-7" />
+              </span>
+            </div>
+            <div className="min-w-fit max-w-fit">
+              <span className="text-[20px] flex items-center !leading-[140%] font-bold">
+                evento online
+                <img src={tag} className="mx-7" />
+              </span>
+            </div>
+            <div className="min-w-fit max-w-fit">
+              <span className="text-[20px] flex items-center !leading-[140%] font-bold">
+                participe gratuitamente
+                <img src={tag} className="mx-7" />
+              </span>
+            </div>
+            <div className="min-w-fit max-w-fit">
+              <span className="text-[20px] flex items-center !leading-[140%] font-bold">
+                De 16/01 — 20/01
+                <img src={tag} className="mx-7" />
+              </span>
+            </div>
+            <div className="min-w-fit max-w-fit">
+              <span className="text-[20px] flex items-center !leading-[140%] font-bold">
+                evento online
+                <img src={tag} className="mx-7" />
+              </span>
+            </div>
+            <div className="min-w-fit max-w-fit">
+              <span className="text-[20px] flex items-center !leading-[140%] font-bold">
+                participe gratuitamente
+                <img src={tag} className="mx-7" />
+              </span>
+            </div>
           </div>
         </div>
       </div>

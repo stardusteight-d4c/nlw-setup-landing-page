@@ -7,8 +7,8 @@ interface Props {}
 
 export const About = (props: Props) => {
   return (
-    <section className="h-screen relative inline-block w-screen">
-      <div className="overlayAboutBackgroudEffect z-0 absolute inset-0 w-screen h-fit bg-cover bg-no-repeat">
+    <section className="h-fit relative inline-block w-screen">
+      <div className="overlayAboutBackgroudEffect z-0  inset-0 w-screen h-fit bg-cover bg-no-repeat">
         <div className="flex flex-col lg:flex-row items-start lg:items-center lg:justify-center lg:mx-auto max-w-7xl py-[140px] px-4 lg:px-14">
           <div className="gradientCircle relative flex items-center justify-center min-w-[159px] min-h-[159px] max-w-[159px] max-h-[159px] z-10">
             <img
@@ -27,7 +27,7 @@ export const About = (props: Props) => {
             </h2>
             <span className="flex gap-x-6 mt-4 items-center text-[#C4C4CC] !leading-[160%]">
               Patrocinador
-              <img src={twilio} />
+              <img src={twilio} className="-mt-[2px]" />
             </span>
           </div>
           <div className="text-[#E1E1E6] !leading-[160%]">

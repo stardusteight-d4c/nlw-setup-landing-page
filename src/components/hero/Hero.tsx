@@ -20,7 +20,7 @@ export const Hero = (props: Props) => {
   })
 
   return (
-    <header className="bg-hero w-screen h-full md:max-h-fit bg-cover bg-no-repeat">
+    <header className="bg-hero w-screen h-fit pb-[100px] md:max-h-fit bg-cover bg-no-repeat">
       <div>
         <Navbar />
         <div className="flex flex-col lg:flex-row items-start pt-[82px] w-full max-w-7xl px-4 lg:pl-4 lg:pr-10 mx-auto">
@@ -100,7 +100,7 @@ export const Hero = (props: Props) => {
           <img src={arrowMotion} className="w-10 h-10 mx-auto -mt-24 md:-mt-6" />
         </div>
       </div>
-      <div className="mx-auto text-[#E1E1E6] gap-4 md:gap-y-12 lg:gap-0 w-full max-w-7xl px-6 md:px-14 grid grid-cols-2 grid-rows-2 md:flex my-24 items-center justify-between">
+      <div className="mx-auto text-[#E1E1E6] gap-4 md:gap-y-12 lg:gap-0 w-full max-w-7xl px-6 md:px-14 grid grid-cols-2 grid-rows-2 md:flex mt-24 items-center justify-between">
         <div className="flex flex-col mx-auto my-auto lg:mx-0 md:my-0 col-span-1 row-span-1 items-center md:w-[170px] text-center text-sm xsm:text-lg mb-10">
           <img src={projectCodeIcon} className="w-10 h-10" />
           <span className="!leading-[160%] pt-4">

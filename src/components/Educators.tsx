@@ -13,7 +13,7 @@ export const Educators = (props: Props) => {
     <section className="educatorsBackground py-[80px] md:py-[140px] w-screen h-fit">
       <div className="max-w-7xl mx-auto px-4 lg:px-14">
         <div className="flex flex-col md:flex-row items-center justify-between mb-[80px]">
-          <h2 className="text-[#E1E1E6] mb-6 md:mb-0 text-center md:text-left w-[500px] font-bold text-[32px] !leading-[140%]">
+          <h2 className="text-[#E1E1E6] mb-6 md:mb-0 text-center md:text-left md:w-[500px] font-bold text-[24px] md:text-[32px] !leading-[140%]">
             Aprenda com educadores com décadas de experiência
           </h2>
           <button className="uppercase w-full col-span-2 md:col-span-1 row-span-1 row-start-3 md:row-start-2 md:w-fit -mt-[2px] text-sm !leading-[0.30rem] text-[#09090a] bg-[#54E694] duration-200 ease-in-out transition-colors p-6 font-bold rounded-[5px] hover:bg-[#00da60]">

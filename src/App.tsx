@@ -11,7 +11,7 @@ interface Props {}
 
 export const App = (props: Props) => {
   return (
-    <div className="w-screen overflow-hidden">
+    <div className="max-w-screen">
       <Hero />
       <About />
       <Trails />

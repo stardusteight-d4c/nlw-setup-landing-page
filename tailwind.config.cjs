@@ -6,6 +6,7 @@ module.exports = {
       animation: {
         'spin-slow': 'spin 10s linear infinite',
         marquee: 'marquee 90s linear infinite',
+        marquee2: 'marquee 50s linear infinite',
       },
       keyframes: {
         marquee: {

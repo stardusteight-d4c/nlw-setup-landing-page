@@ -49,6 +49,13 @@ body {
   background-attachment: fixed;
 }
 
+.experienceBackground {
+  background-image: url('/background-fragment1.svg');
+  background-position: 0 50%;
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+
 .educatorCardHeaderBackground {
   background-image: url('/bg-educator.png');
   background-position: 50% 50%;

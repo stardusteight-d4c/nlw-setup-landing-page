@@ -2,7 +2,7 @@ import tag from '@assets/tag.png'
 
 interface Props {}
 
-export const Marquee = (props: Props) => {
+export const AboutMarquee = (props: Props) => {
   return (
     <div className="h-[92px] w-fit justify-center relative bg-[#373D98] flex items-center">
       <div className="flex w-fit whitespace-nowrap animate-marquee">

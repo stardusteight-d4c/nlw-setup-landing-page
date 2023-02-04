@@ -7,18 +7,18 @@ interface Props {}
 export const Experience = (props: Props) => {
   return (
     <section className="bg-[#121214] experienceBackground pt-[140px] w-screen">
-      <div className="max-w-7xl relative flex items-start justify-between mx-auto px-4 lg:px-14">
-        <div className="sticky z-50 top-[140px]">
+      <div className="max-w-7xl relative grid grid-cols-1 md:grid-cols-2 items-start justify-between mx-auto px-4 lg:px-14">
+        <div className="md:sticky z-50 top-[140px] col-span-1">
           <span className="text-[#54E694] inline-block mb-4 uppercase !leading-[150%] tracking-[3px] font-medium">
             Experiência Completa
           </span>
           <h2 className="text-[#E1E1E6] text-[32px] !leading-[140%] font-bold">
             Comece do jeito certo e esteja preparado
           </h2>
-          <img src={arrowRight} className="mt-10" />
+          <img src={arrowRight} className="mt-10 rotate-90 md:rotate-0" />
         </div>
-        <div className="w-[50%] pl-[10px]">
-          <ul className="flex ml-[80px] items-stretch flex-col gap-y-12">
+        <div className="md:pl-[10px] mt-8 md:mt-0 ml-[11px] pl-4 md:ml-0 border-l-[2px] border-l-[#333333] md:border-l-0 col-span-1">
+          <ul className="flex md:ml-[80px] flex-col gap-y-12">
             <li>
               <img src={checkList} />
               <h3 className="text-2xl text-[#E1E1E6] mt-4 font-bold !leading-[140%]">
@@ -79,7 +79,7 @@ export const Experience = (props: Props) => {
         </div>
         <div className="w-full h-[1px] bg-[#323238]" />
       </div>
-      <div className='pt-[32px] pb-[100px]'>
+      <div className='pt-[32px] w-screen overflow-hidden pb-[100px]'>
         <ExperienceMarquee />
       </div>
     </section>

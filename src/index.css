@@ -40,3 +40,17 @@ body {
   background-size: auto, auto;
   background-repeat: no-repeat, no-repeat;
 }
+
+  .youtubePlayer {
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    position: relative;
+  }
+  .youtubePlayer iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }

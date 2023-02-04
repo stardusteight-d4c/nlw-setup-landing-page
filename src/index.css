@@ -41,16 +41,38 @@ body {
   background-repeat: no-repeat, no-repeat;
 }
 
-  .youtubePlayer {
-    width: 100%;
-    height: 0;
-    padding-bottom: 56.25%;
-    position: relative;
-  }
-  .youtubePlayer iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
+.educatorsBackground {
+  background-image: url('/background-educators.webp');
+  background-position: 50% 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.educatorCardHeaderBackground {
+  background-image: url('/bg-educator.png');
+  background-position: 50% 50%;
+  background-size: cover;
+  opacity: 90%;
+}
+
+.educator {
+  max-width: 80%;
+  margin-top: -32px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.youtubePlayer {
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  position: relative;
+}
+.youtubePlayer iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

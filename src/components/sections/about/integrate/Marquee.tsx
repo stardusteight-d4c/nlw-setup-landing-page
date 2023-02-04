@@ -1,4 +1,4 @@
-import tag from '../../../assets/about/tag.png'
+import tag from '../../../../assets/about/tag.png'
 
 interface Props {}
 

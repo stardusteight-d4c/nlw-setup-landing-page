@@ -1,16 +1,15 @@
 import { Navbar } from './integrate/Navbar'
 
-import backgroud from '../../assets/hero/background.webp'
-import logo from '../../assets/hero/nlw-setup-logo.svg'
-import calendarIcon from '../../assets/hero/calendar-icon.svg'
-import desktopIcon from '../../assets/hero/desktop-icon.svg'
-import divider from '../../assets/hero/divider.svg'
-import arrowMotion from '../../assets/hero/white-arrow-motion.gif'
-import projectCodeIcon from '../../assets/hero/project-code-icon.svg'
-import networkingIcon from '../../assets/hero/networking-icon.svg'
-import tabCodeIcon from '../../assets/hero/tab-code-icon.svg'
-import medalIcon from '../../assets/hero/medal-icon.svg'
+import logo from '../../../assets/hero/nlw-setup-logo.svg'
+import calendarIcon from '../../../assets/hero/calendar-icon.svg'
+import desktopIcon from '../../../assets/hero/desktop-icon.svg'
+import projectCodeIcon from '../../../assets/hero/project-code-icon.svg'
+import networkingIcon from '../../../assets/hero/networking-icon.svg'
+import tabCodeIcon from '../../../assets/hero/tab-code-icon.svg'
+import medalIcon from '../../../assets/hero/medal-icon.svg'
 import { useMediaQuery } from 'react-responsive'
+import divider from '../../../assets/divider.svg'
+import arrowMotion from '../../../assets/white-arrow-motion.gif'
 
 interface Props {}
 

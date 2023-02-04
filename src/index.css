@@ -31,3 +31,12 @@ body {
   background-image: linear-gradient(313deg, #54e694, #8a50ec);
   border-radius: 9999px;
 }
+
+.projectBackground {
+  padding-bottom: 0;
+  background-image: url('/background-fragment2.svg'),
+    url('/background-fragment1.svg');
+  background-position: 100% 100%, 0 0;
+  background-size: auto, auto;
+  background-repeat: no-repeat, no-repeat;
+}

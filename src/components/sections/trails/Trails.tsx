@@ -1,13 +1,13 @@
-import explorer from '../../assets/trails/explorer.svg'
-import ignite from '../../assets/trails/ignite.svg'
-import explorerTechnologies from '../../assets/trails/explorer-technologies.svg'
-import igniteTechnologies from '../../assets/trails/ignite-technologies.svg'
+import explorer from '../../../assets/trails/explorer.svg'
+import ignite from '../../../assets/trails/ignite.svg'
+import explorerTechnologies from '../../../assets/trails/explorer-technologies.svg'
+import igniteTechnologies from '../../../assets/trails/ignite-technologies.svg'
 
 interface Props {}
 
 export const Trails = (props: Props) => {
   return (
-    <section className="h-fit bg-[#121214] w-screen inline-block">
+    <section className="bg-[#121214] w-screen h-fit inline-block">
       <div className="max-w-7xl flex flex-col md:grid md:gap-x-8 gap-y-8 lg:gap-y-[60px] mt-[80px] md:mt-[140px] items-center justify-center grid-cols-1 md:grid-cols-2 mx-auto px-4 lg:pl-14 lg:pr-12">
         <h2 className="text-[32px] text-center md:text-left  col-span-1 font-bold leading-[140%] text-[#E1E1E6]">
           Para diferentes objetivos, diferentes trilhas de conteúdo

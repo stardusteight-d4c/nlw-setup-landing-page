@@ -1,9 +1,9 @@
-import arrowDown from '../../../assets/project/arrow-down.svg'
-import desktopProject from '../../../assets/project/desktop-showcase.svg'
-import mobileProject from '../../../assets/project/mobile-showcase.svg'
-import habitsTracker from '../../../assets/project/habits-tracker.svg'
-import divider from '../../../assets/divider.svg'
-import arrowMotion from '../../../assets/white-arrow-motion.gif'
+import arrowDown from '@assets/arrow-down.svg'
+import desktopProject from '@assets/desktop-showcase.svg'
+import mobileProject from '@assets/mobile-showcase.svg'
+import habitsTracker from '@assets/habits-tracker.svg'
+import divider from '@assets/divider.svg'
+import arrowMotion from '@assets/white-arrow-motion.gif'
 
 interface Props {}
 

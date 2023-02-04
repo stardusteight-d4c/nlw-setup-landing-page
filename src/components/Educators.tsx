@@ -1,10 +1,10 @@
-import jake from '../../../assets/educators/jake.png'
-import diego from '../../../assets/educators/diego.png'
-import rodrigo from '../../../assets/educators/rodrigo.png'
-import mayk from '../../../assets/educators/mayk.png'
-import host from '../../../assets/educators/host-icon.svg'
-import ignite from '../../../assets/educators/ignite-icon.svg'
-import explorer from '../../../assets/educators/explorer-icon.svg'
+import jake from '@assets/jake.png'
+import diego from '@assets/diego.png'
+import rodrigo from '@assets/rodrigo.png'
+import mayk from '@assets/mayk.png'
+import host from '@assets/host-icon.svg'
+import ignite from '@assets/ignite-icon.svg'
+import explorer from '@assets/explorer-icon.svg'
 
 interface Props {}
 

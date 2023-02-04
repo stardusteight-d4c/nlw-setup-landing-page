@@ -1,10 +1,11 @@
 import React from 'react'
-import { About } from './components/sections/about/About'
-import { Educators } from './components/sections/educators/Educators'
-import { Hero } from './components/sections/hero/Hero'
-import { Highlights } from './components/sections/highlights/Highlights'
-import { Project } from './components/sections/project/Project'
-import { Trails } from './components/sections/trails/Trails'
+import { About } from './components/About'
+import { Educators } from './components/Educators'
+import { Experience } from './components/Experience'
+import { Hero } from './components/Hero'
+import { Highlights } from './components/Highlights'
+import { Project } from './components/Project'
+import { Trails } from './components/Trails'
 
 interface Props {}
 
@@ -17,6 +18,7 @@ export const App = (props: Props) => {
       <Project />
       <Highlights />
       <Educators />
+      <Experience />
     </div>
   )
 }

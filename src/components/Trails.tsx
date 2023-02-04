@@ -1,7 +1,7 @@
-import explorer from '../../../assets/trails/explorer.svg'
-import ignite from '../../../assets/trails/ignite.svg'
-import explorerTechnologies from '../../../assets/trails/explorer-technologies.svg'
-import igniteTechnologies from '../../../assets/trails/ignite-technologies.svg'
+import explorer from '@assets/explorer.svg'
+import ignite from '@assets/ignite.svg'
+import explorerTechnologies from '@assets/explorer-technologies.svg'
+import igniteTechnologies from '@assets/ignite-technologies.svg'
 
 interface Props {}
 

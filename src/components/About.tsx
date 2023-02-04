@@ -1,6 +1,6 @@
-import year2023 from '../../../assets/about/year-2023.svg'
-import firstEventOfTheYear from '../../../assets/about/first-event-of-the-year-circle.svg'
-import twilio from '../../../assets/about/twilio-logo.svg'
+import year2023 from '@assets/year-2023.svg'
+import firstEventOfTheYear from '@assets/first-event-of-the-year-circle.svg'
+import twilio from '@assets/twilio-logo.svg'
 import { Marquee } from './integrate/Marquee'
 
 interface Props {}

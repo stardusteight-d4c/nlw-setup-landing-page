@@ -10,15 +10,15 @@ interface Props {}
 export const Project = (props: Props) => {
   return (
     <section className="bg-[#121214] projectBackground w-screen h-fit">
-      <div className="max-w-7xl mx-auto px-4 lg:pl-14">
-        <div className="text-center flex flex-col items-center justify-center">
-          <span className="uppercase mb-4 text-[#54E694] font-medium tracking-[3px] !leading-[150%]">
+      <div className="max-w-7xl mx-auto px-4 lg:px-14">
+        <div className="text-center flex flex-col items-center ">
+          <span className="uppercase text-sm xsm:text-base mb-4 text-[#54E694] font-medium tracking-[3px] !leading-[150%]">
             O que vamos construir
           </span>
-          <h2 className="text-[#E1E1E6] text-[32px] w-[500px] font-bold !leading-[140%]">
+          <h2 className="text-[#E1E1E6] text-[24px] xsm:text-[32px] md:w-[500px] font-bold !leading-[140%]">
             Dev, bora desenvolver um projeto de controle de hábitos?
           </h2>
-          <p className="w-[640px] mt-6 mb-4 text-[#C4C4CC]">
+          <p className="lg:w-[640px] mt-6 mb-4 text-[#C4C4CC]">
             O projeto que vamos criar em{' '}
             <strong className="text-[#54E694] !leading-[160%]">
               apenas 5 aulas
@@ -32,10 +32,10 @@ export const Project = (props: Props) => {
           <img src={arrowDown} />
         </div>
         <img src={desktopProject} className="w-full h-auto" />
-        <div className="flex items-center">
+        <div className="flex mt-[50px] md:mt-0 flex-col md:flex-row items-center">
           <div>
             <img src={habitsTracker} />
-            <p className="text-[#E1E1E6] w-[594px] font-bold text-2xl !leading-[140%] mt-4 mb-6">
+            <p className="text-[#E1E1E6] text-lg xsm:text-2xl md:w-[370px] lg:w-auto xl:w-[594px] font-bold !leading-[140%] mt-4 mb-6">
               Essa é uma ótima oportunidade de você desenvolver um projeto que
               propõe soluções no mundo real, que vai agregar valor para o seu
               portfólio e claro, até o para o seu cotidiano.
@@ -46,12 +46,12 @@ export const Project = (props: Props) => {
           </div>
           <img
             src={mobileProject}
-            className="align-middle inline-block max-w-[488px]"
+            className="xl:align-middle w-full xl:inline-block xl:max-w-[488px]"
           />
         </div>
         <div className="mt-24 pb-4 cursor-pointer">
           <img src={divider} className="hidden md:block w-full h-full" />
-          <img src={arrowMotion} className="w-10 h-10 mx-auto -mt-24 md:-mt-6" />
+          <img src={arrowMotion} className="w-10 h-10 mx-auto -mt-[80px] md:-mt-6" />
         </div>
       </div>
     </section>

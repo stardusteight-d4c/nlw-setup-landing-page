@@ -8,7 +8,7 @@ interface Props {}
 
 export const App = (props: Props) => {
   return (
-    <div className="max-w-7xl">
+    <div className="max-w-7xl overflow-x-hidden">
       <Hero />
       <About />
       <Trails />

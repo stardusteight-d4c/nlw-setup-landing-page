@@ -25,7 +25,11 @@ export const Rewards = (props: Props) => {
               garantir ingresso gratuito
             </button>
           </div>
-            <img src={rewards} alt="rewards/img" className="md:w-[50%] ml-2 md:ml-0" />
+          <img
+            src={rewards}
+            alt="rewards/img"
+            className="md:w-[50%] ml-2 md:ml-0"
+          />
         </div>
       </div>
     </section>

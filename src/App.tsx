@@ -2,6 +2,7 @@ import React from 'react'
 import { About } from './components/About'
 import { Educators } from './components/Educators'
 import { Experience } from './components/Experience'
+import { Faq } from './components/Faq'
 import { Hero } from './components/Hero'
 import { Highlights } from './components/Highlights'
 import { Opportunity } from './components/Opportunity'
@@ -23,6 +24,7 @@ export const App = (props: Props) => {
       <Experience />
       <Opportunity />
       <Rewards />
+      <Faq />
     </main>
   )
 }

@@ -4,6 +4,7 @@ import { Educators } from './components/Educators'
 import { Experience } from './components/Experience'
 import { Hero } from './components/Hero'
 import { Highlights } from './components/Highlights'
+import { Opportunity } from './components/Opportunity'
 import { Project } from './components/Project'
 import { Trails } from './components/Trails'
 
@@ -19,6 +20,7 @@ export const App = (props: Props) => {
       <Highlights />
       <Educators />
       <Experience />
+      <Opportunity />
     </div>
   )
 }

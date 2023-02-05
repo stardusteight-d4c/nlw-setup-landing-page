@@ -6,7 +6,7 @@ interface Props {}
 
 export const Experience = (props: Props) => {
   return (
-    <section className="bg-[#121214] experienceBackground pt-[140px] w-screen">
+    <section className="bg-[#121214] experienceBackground pt-[80px] md:pt-[140px] w-screen">
       <div className="max-w-7xl relative grid grid-cols-1 md:grid-cols-2 items-start justify-between mx-auto px-4 lg:px-14">
         <div className="md:sticky z-50 top-[140px] col-span-1">
           <span className="text-[#54E694] inline-block mb-4 uppercase !leading-[150%] tracking-[3px] font-medium">
@@ -74,7 +74,7 @@ export const Experience = (props: Props) => {
       </div>
       <div className="max-w-7xl mt-[100px] text-center relative flex items-center justify-between mx-auto px-4 lg:px-14">
         <div className="w-full h-[1px] bg-[#323238]" />
-        <div className="uppercase whitespace-nowrap mx-14 text-[#54E694] font-medium tracking-[2.5px]">
+        <div className="uppercase whitespace-nowrap mx-4 md:mx-14 text-[#54E694] font-medium tracking-[2.5px]">
           E ainda tem mais
         </div>
         <div className="w-full h-[1px] bg-[#323238]" />

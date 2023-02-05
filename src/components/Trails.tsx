@@ -7,8 +7,8 @@ interface Props {}
 
 export const Trails = (props: Props) => {
   return (
-    <section className="bg-[#121214] w-screen h-fit inline-block">
-      <div className="max-w-7xl flex flex-col md:grid md:gap-x-8 gap-y-8 lg:gap-y-[60px] mt-[80px] md:mt-[140px] items-center justify-center grid-cols-1 md:grid-cols-2 mx-auto px-4 lg:px-14">
+    <section className="bg-[#121214] w-screen h-fit">
+      <div className="max-w-7xl flex flex-col md:grid md:gap-x-8 gap-y-8 lg:gap-y-[60px] pt-[80px] md:pt-[140px] items-center justify-center grid-cols-1 md:grid-cols-2 mx-auto px-4 lg:px-14">
         <h2 className="text-[32px] text-center md:text-left  col-span-1 font-bold leading-[140%] text-[#E1E1E6]">
           Para diferentes objetivos, diferentes trilhas de conteúdo
         </h2>

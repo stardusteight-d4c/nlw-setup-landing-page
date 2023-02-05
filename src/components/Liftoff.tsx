@@ -7,7 +7,11 @@ export const Liftoff = (props: Props) => {
     <section className="liftoff">
       <div className="max-w-7xl flex flex-col md:flex-row mx-auto px-4 lg:px-14">
         <div className="md:w-[39%]">
-          <img src={doubleQuotes} alt="quotes/img" className="pb-[60px] mx-auto md:mx-0" />
+          <img
+            src={doubleQuotes}
+            alt="quotes/img"
+            className="pb-[60px] mx-auto md:mx-0"
+          />
           <h2 className="text-2xl text-[#E1E1E6] xsm:text-[32px] font-bold !leading-[140%]">
             Na programação o aprendizado é contínuo e sempre haverá um próximo
             nível.

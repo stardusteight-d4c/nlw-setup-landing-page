@@ -5,6 +5,7 @@ import { Experience } from './components/Experience'
 import { Faq } from './components/Faq'
 import { Hero } from './components/Hero'
 import { Highlights } from './components/Highlights'
+import { Liftoff } from './components/Liftoff'
 import { Opportunity } from './components/Opportunity'
 import { Project } from './components/Project'
 import { Rewards } from './components/Rewards'
@@ -25,6 +26,7 @@ export const App = (props: Props) => {
       <Opportunity />
       <Rewards />
       <Faq />
+      <Liftoff />
     </main>
   )
 }

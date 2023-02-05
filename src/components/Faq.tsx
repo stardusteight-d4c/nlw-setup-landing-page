@@ -1,5 +1,4 @@
 import { Accordion } from './integrate/Accordion'
-import { PlusCloseIconAnimated } from './integrate/PlusCloseIconAnimated'
 
 interface Props {}
 

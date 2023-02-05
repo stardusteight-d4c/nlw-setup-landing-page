@@ -83,3 +83,13 @@ body {
   width: 100%;
   height: 100%;
 }
+
+.liftoff {
+  display: block;
+  padding-top: 140px;
+  padding-bottom: 140px;
+  background-image: url('/rocket-liftoff.png');
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

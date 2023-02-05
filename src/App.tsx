@@ -6,13 +6,14 @@ import { Hero } from './components/Hero'
 import { Highlights } from './components/Highlights'
 import { Opportunity } from './components/Opportunity'
 import { Project } from './components/Project'
+import { Rewards } from './components/Rewards'
 import { Trails } from './components/Trails'
 
 interface Props {}
 
 export const App = (props: Props) => {
   return (
-    <div className="max-w-screen">
+    <main className="max-w-screen">
       <Hero />
       <About />
       <Trails />
@@ -21,6 +22,7 @@ export const App = (props: Props) => {
       <Educators />
       <Experience />
       <Opportunity />
-    </div>
+      <Rewards />
+    </main>
   )
 }

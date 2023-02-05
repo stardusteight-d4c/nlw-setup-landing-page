@@ -13,7 +13,7 @@ export const Opportunity = (props: Props) => {
           <span className="uppercase mb-4 inline-block text-[#54E694] font-medium tracking-[3px] !leading-[150%]">
             oportunidade
           </span>
-          <h2 className="text-[#E1E1E6] mx-auto w-[500px] font-bold text-[32px] !leading-[140%]">
+          <h2 className="text-[#E1E1E6] mx-auto md:w-[500px] font-bold text-[32px] !leading-[140%]">
             Conquiste seus principais objetivos como dev em 2023
           </h2>
         </div>

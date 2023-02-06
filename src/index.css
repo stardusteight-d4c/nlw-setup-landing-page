@@ -128,6 +128,19 @@ body {
   transition: all 800ms;
 }
 
+.animate-about-initial-state-from-top {
+  transform: translate3d(0px, -250px, 0px);
+  opacity: 0;
+  transition: all ease-in-out 1000ms;
+}
+
+.animate-about-final-state-from-top {
+  transform: translate3d(0px, 0px, 0px);
+  opacity: 1;
+  transition: all ease-in-out 1000ms;
+}
+
+
 ::-webkit-scrollbar {
   width: 4px;
   height: 8px;

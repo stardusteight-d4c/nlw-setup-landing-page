@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import nlwLogo from '@assets/nlw-horizontal-logo.svg'
 import { Button } from './Button'
+import { scrollTo } from '@/utils/scroll-to-target'
 
 interface Props {}
 
@@ -37,7 +38,6 @@ export const Navbar = (props: Props) => {
     }
   }
 
-  // Get distance between the top of the section and the top of the page with offsetTop
   return (
     <nav style={style.handleWrapper(scrollingPage, transition, showScrollNav)}>
       <div className={style.contentWrapper(scrollingPage)}>
@@ -45,12 +45,15 @@ export const Navbar = (props: Props) => {
         <ul className={style.contentContainer(scrollingPage)}>
           <a
             onClick={() => {
+              // Get distance between the top of the section and the top of the page with offsetTop
               const element: HTMLElement = document.querySelector('#about')!
-              const distanceFromTop = element.offsetTop
-              window.scroll({
-                top: distanceFromTop - (navHeight - 18),
-                behavior: 'smooth',
-              })
+              const distanceFromTop = element.offsetTop - (navHeight - 18)
+              // window.scroll({
+              //   top: distanceFromTop - (navHeight - 18),
+              //   behavior: 'smooth',
+              //   // native method, but there is no way to control the speed
+              // })
+              scrollTo(distanceFromTop, 800)
             }}
             className={style.list}
           >
@@ -59,11 +62,8 @@ export const Navbar = (props: Props) => {
           <a
             onClick={() => {
               const element: HTMLElement = document.querySelector('#trials')!
-              const distanceFromTop = element.offsetTop
-              window.scroll({
-                top: distanceFromTop - (navHeight - 18),
-                behavior: 'smooth',
-              })
+              const distanceFromTop = element.offsetTop - (navHeight - 18)
+              scrollTo(distanceFromTop, 800)
             }}
             className={style.list}
           >

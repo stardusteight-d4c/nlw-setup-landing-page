@@ -29,7 +29,7 @@ export const Footer = (props: Props) => {
             Políticas de privacidade
           </a>
         </div>
-        <img src={backToTop} alt="backToTop/img" />
+        <img src={backToTop} alt="backToTop/img" className='cursor-pointer' />
       </div>
     </footer>
   )

@@ -93,3 +93,36 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+.animate-initial-state-from-top {
+  opacity: 0;
+  transform: translate3d(0px, -50px, 0px);
+  transition: 500ms;
+}
+
+.animate-final-state-from-top  {
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px);
+  transition: 500ms;
+}
+
+.animate-nav-initial-state-from-top {
+  transform: translate3d(0px, -100px, 0px);
+  transition: transform 500ms;
+}
+
+.animate-nav-final-state-from-top  {
+  transform: translate3d(0px, 0px, 0px);
+  transition: transform 500ms;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  cursor: pointer;
+  background: #1856ff;
+  border-radius: 20px;
+}

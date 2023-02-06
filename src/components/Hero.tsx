@@ -9,6 +9,7 @@ import medalIcon from '@assets/medal-icon.svg'
 import { useMediaQuery } from 'react-responsive'
 import divider from '@assets/divider.svg'
 import arrowMotion from '@assets/white-arrow-motion.gif'
+import { useEffect, useRef, useState } from 'react'
 
 interface Props {}
 
@@ -16,6 +17,37 @@ export const Hero = (props: Props) => {
   const minWith768px = useMediaQuery({
     query: '(min-width: 768px)',
   })
+  const [isInView, setIsInView] = useState(false)
+
+  setTimeout(() => {
+    setIsInView(true)
+  }, 800)
+
+
+  // const ref = useRef<HTMLButtonElement>(null)
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     if (!ref.current) {
+  //       return
+  //     }
+
+  //     const elementPosition = ref.current.offsetTop
+  //     const scrollPosition = window.pageYOffset
+  //     const windowHeight = window.innerHeight
+
+  //     if (elementPosition < scrollPosition + windowHeight) {
+  //       setIsInView(true)
+  //     } else {
+  //       setIsInView(false)
+  //     }
+  //   }
+
+  //   window.addEventListener('scroll', handleScroll)
+
+  //   return () => {
+  //     window.removeEventListener('scroll', handleScroll)
+  //   }
+  // }, [])
 
   return (
     <header className="bg-hero w-screen h-fit pb-[100px] md:max-h-fit bg-cover bg-no-repeat">
@@ -87,7 +119,13 @@ export const Hero = (props: Props) => {
                 prepare-se para levar seu código, habilidades e carreira para o
                 próximo nível.
               </span>
-              <button className="uppercase w-full col-span-2 md:col-span-1 row-span-1 row-start-3 md:row-start-2 md:w-fit -mt-[2px] text-sm !leading-[0.30rem] text-[#09090a] bg-[#54E694] duration-200 ease-in-out transition-colors p-6 font-bold rounded-[5px] hover:bg-[#00da60]">
+              <button
+                className={`${
+                  isInView
+                    ? 'animate-final-state-from-top'
+                    : 'animate-initial-state-from-top'
+                } uppercase w-full col-span-2 md:col-span-1 row-span-1 row-start-3 md:row-start-2 md:w-fit -mt-[2px] text-sm !leading-[0.30rem] text-[#09090a] bg-[#54E694] duration-200 ease-in-out transition-colors p-6 font-bold rounded-[5px] hover:bg-[#00da60]`}
+              >
                 garantir ingresso gratuito
               </button>
             </div>
@@ -95,7 +133,10 @@ export const Hero = (props: Props) => {
         </div>
         <div className="mx-auto max-w-7xl relative px-14 mt-24 pb-4 cursor-pointer">
           <img src={divider} className="hidden md:block w-full h-full" />
-          <img src={arrowMotion} className="w-10 h-10 mx-auto -mt-24 md:-mt-6" />
+          <img
+            src={arrowMotion}
+            className="w-10 h-10 mx-auto -mt-24 md:-mt-6"
+          />
         </div>
       </div>
       <div className="mx-auto text-[#E1E1E6] gap-4 md:gap-y-12 lg:gap-0 w-full max-w-7xl px-6 md:px-14 grid grid-cols-2 grid-rows-2 md:flex mt-24 items-center justify-between">

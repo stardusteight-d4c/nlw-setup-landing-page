@@ -32,7 +32,7 @@ export const Project = (props: Props) => {
           <img src={arrowDown} />
         </div>
         <img src={desktopProject} className="w-full h-auto" />
-        <div className="flex mt-[50px] md:mt-0 flex-col md:flex-row items-center">
+        <div className="flex pt-[60px] md:mt-0 flex-col md:flex-row items-center">
           <div>
             <img src={habitsTracker} />
             <p className="text-[#E1E1E6] text-lg xsm:text-2xl md:w-[370px] lg:w-auto xl:w-[594px] font-bold !leading-[140%] mt-4 mb-6">
@@ -46,7 +46,7 @@ export const Project = (props: Props) => {
           </div>
           <img
             src={mobileProject}
-            className="xl:align-middle w-full xl:inline-block xl:max-w-[488px]"
+            className="xl:align-middle md:ml-auto w-full xl:inline-block xl:max-w-[488px]"
           />
         </div>
         <div className="mt-24 pb-4 cursor-pointer">

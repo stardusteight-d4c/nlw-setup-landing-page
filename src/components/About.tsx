@@ -64,7 +64,7 @@ export const About = (props: Props) => {
   }
 
   return (
-    <section ref={headingRef} className={style.wrapper}>
+    <section id="about" ref={headingRef} className={style.wrapper}>
       <div className={style.contentWrapper}>
         <div className={style.mainContentContainer}>
           <div className={style.circleEmblem}>

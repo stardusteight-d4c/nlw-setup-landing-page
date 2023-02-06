@@ -8,6 +8,7 @@ export const Navbar = (props: Props) => {
   const [scrollingPage, setScrollingPage] = useState(false)
   const [showScrollNav, setShowScrollNav] = useState(false)
   const [transition, setTransition] = useState(false)
+  const navHeight = 98
 
   useEffect(() => {
     window.addEventListener('scroll', onNavPageScroll)
@@ -36,16 +37,41 @@ export const Navbar = (props: Props) => {
     }
   }
 
+  // Get distance between the top of the section and the top of the page with offsetTop
   return (
     <nav style={style.handleWrapper(scrollingPage, transition, showScrollNav)}>
       <div className={style.contentWrapper(scrollingPage)}>
         {scrollingPage && <img src={nlwLogo} alt="nlw/logo" />}
         <ul className={style.contentContainer(scrollingPage)}>
-          <li className={style.list}>Sobre</li>
-          <li className={style.list}>Trilhas de conteúdo</li>
-          <li className={style.list}>Projetos</li>
-          <li className={style.list}>Educadores</li>
-          <li className={style.list}>Dúvidas</li>
+          <a
+            onClick={() => {
+              const element: HTMLElement = document.querySelector('#about')!
+              const distanceFromTop = element.offsetTop
+              window.scroll({
+                top: distanceFromTop - (navHeight - 18),
+                behavior: 'smooth',
+              })
+            }}
+            className={style.list}
+          >
+            Sobre
+          </a>
+          <a
+            onClick={() => {
+              const element: HTMLElement = document.querySelector('#trials')!
+              const distanceFromTop = element.offsetTop
+              window.scroll({
+                top: distanceFromTop - (navHeight - 18),
+                behavior: 'smooth',
+              })
+            }}
+            className={style.list}
+          >
+            Trilhas de conteúdo
+          </a>
+          <a className={style.list}>Projetos</a>
+          <a className={style.list}>Educadores</a>
+          <a className={style.list}>Dúvidas</a>
         </ul>
         <Button variant={true}>inscreva-se {!scrollingPage && 'agora'}</Button>
       </div>

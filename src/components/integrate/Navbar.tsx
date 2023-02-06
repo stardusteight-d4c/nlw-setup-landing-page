@@ -41,19 +41,22 @@ export const Navbar = (props: Props) => {
   return (
     <nav style={style.handleWrapper(scrollingPage, transition, showScrollNav)}>
       <div className={style.contentWrapper(scrollingPage)}>
-        {scrollingPage && <img src={nlwLogo} alt="nlw/logo" />}
+        {scrollingPage && (
+          <img
+            src={nlwLogo}
+            alt="nlw/logo"
+            className="cursor-pointer"
+            onClick={() => {
+              scrollTo(0, 800)
+            }}
+          />
+        )}
         <ul className={style.contentContainer(scrollingPage)}>
           <a
             onClick={() => {
-              // Get distance between the top of the section and the top of the page with offsetTop
               const element: HTMLElement = document.querySelector('#about')!
               const distanceFromTop = element.offsetTop - (navHeight - 18)
-              // window.scroll({
-              //   top: distanceFromTop - (navHeight - 18),
-              //   behavior: 'smooth',
-              //   // native method, but there is no way to control the speed
-              // })
-              scrollTo(distanceFromTop, 800)
+              scrollTo(distanceFromTop, 500)
             }}
             className={style.list}
           >
@@ -62,14 +65,23 @@ export const Navbar = (props: Props) => {
           <a
             onClick={() => {
               const element: HTMLElement = document.querySelector('#trials')!
-              const distanceFromTop = element.offsetTop - (navHeight - 18)
-              scrollTo(distanceFromTop, 800)
+              const distanceFromTop = element.offsetTop
+              scrollTo(distanceFromTop, 500)
             }}
             className={style.list}
           >
             Trilhas de conteúdo
           </a>
-          <a className={style.list}>Projetos</a>
+          <a
+            onClick={() => {
+              const element: HTMLElement = document.querySelector('#project')!
+              const distanceFromTop = element.offsetTop - (navHeight + 10)
+              scrollTo(distanceFromTop, 500)
+            }}
+            className={style.list}
+          >
+            Projetos
+          </a>
           <a className={style.list}>Educadores</a>
           <a className={style.list}>Dúvidas</a>
         </ul>

@@ -135,7 +135,7 @@ body {
 .animate-about-initial-state-from-top {
   transform: translate3d(0px, -250px, 0px);
   opacity: 0;
-  transition: all ease-in-out 1000ms;
+  transition: all ease-in-out 0;
 }
 
 .animate-about-final-state-from-top {
@@ -144,6 +144,41 @@ body {
   transition: all ease-in-out 1000ms;
 }
 
+.animate-trials-initial-state-from-bottom {
+  transform: translate3d(0px, 250px, 0px);
+  opacity: 0;
+  transition: all ease-in-out 0ms;
+}
+
+.animate-trials-final-state-from-bottom {
+  transform: translate3d(0px, 0px, 0px);
+  opacity: 1;
+  transition: all ease-in-out 1000ms;
+}
+
+.animate-project-paragraph-initial-state-from-left {
+  transform: translate3d(-300px, 0px, 0px);
+  opacity: 0;
+  transition: all ease-in-out 0ms;
+}
+
+.animate-project-paragraph-final-state-from-left {
+  transform: translate3d(0px, 0px, 0px);
+  opacity: 1;
+  transition: all ease-in-out 800ms;
+}
+
+.animate-project-img-initial-state-from-right {
+  transform: translate3d(300px, 0px, 0px);
+  opacity: 0;
+  transition: all ease-in-out 0ms;
+}
+
+.animate-project-img-final-state-from-right {
+  transform: translate3d(0px, 0px, 0px);
+  opacity: 1;
+  transition: all ease-in-out 800ms;
+}
 
 ::-webkit-scrollbar {
   width: 4px;

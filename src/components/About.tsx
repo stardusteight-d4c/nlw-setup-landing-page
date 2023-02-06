@@ -15,12 +15,12 @@ export const About = (props: Props) => {
   const [animateTwilio, setAnimateTwilio] = useState(false)
   const [animateSpan, setAnimateSpan] = useState(false)
   const [animateButton, setAnimateButton] = useState(false)
-  const headingRef = useRef<HTMLElement>(null)
+  const aboutRef = useRef<HTMLElement>(null)
 
   // ref is in view?
   // several times
   useEffect(() => {
-    if (headingRef !== null) {
+    if (aboutRef !== null) {
       const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
@@ -30,10 +30,10 @@ export const About = (props: Props) => {
           }
         })
       })
-      observer.observe(headingRef.current!)
+      observer.observe(aboutRef.current!)
       return () => observer.disconnect()
     }
-  }, [headingRef])
+  }, [aboutRef])
 
   useEffect(() => {
     window.addEventListener('scroll', handleAboutItemsAnimate)
@@ -64,7 +64,7 @@ export const About = (props: Props) => {
   }
 
   return (
-    <section id="about" ref={headingRef} className={style.wrapper}>
+    <section id="about" ref={aboutRef} className={style.wrapper}>
       <div className={style.contentWrapper}>
         <div className={style.mainContentContainer}>
           <div className={style.circleEmblem}>

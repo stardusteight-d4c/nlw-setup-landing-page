@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import nlwLogo from '@assets/nlw-horizontal-logo.svg'
+import { Button } from './Button'
 
 interface Props {}
 
@@ -35,7 +36,29 @@ export const Navbar = (props: Props) => {
     }
   }
 
-  const handleNavStyle = () => {
+  return (
+    <nav style={style.handleWrapper(scrollingPage, transition, showScrollNav)}>
+      <div className={style.contentWrapper(scrollingPage)}>
+        {scrollingPage && <img src={nlwLogo} alt="nlw/logo" />}
+        <ul className={style.contentContainer(scrollingPage)}>
+          <li className={style.list}>Sobre</li>
+          <li className={style.list}>Trilhas de conteúdo</li>
+          <li className={style.list}>Projetos</li>
+          <li className={style.list}>Educadores</li>
+          <li className={style.list}>Dúvidas</li>
+        </ul>
+        <Button variant={true}>inscreva-se {!scrollingPage && 'agora'}</Button>
+      </div>
+    </nav>
+  )
+}
+
+const style = {
+  handleWrapper: (
+    scrollingPage: boolean,
+    transition: boolean,
+    showScrollNav: boolean
+  ) => {
     if (scrollingPage) {
       return {
         background: '#121214',
@@ -55,44 +78,16 @@ export const Navbar = (props: Props) => {
         zIndex: '500',
       }
     }
-  }
-
-  return (
-    <nav style={{ ...handleNavStyle() }}>
-      <div
-        className={`${
-          scrollingPage ? 'flex' : 'hidden'
-        } text-[#C4C4CC] mx-auto max-w-7xl md:px-4 lg:px-14 py-4 md:flex items-center justify-center md:justify-between`}
-      >
-        {scrollingPage && <img src={nlwLogo} alt="nlw/logo" />}
-        <ul
-          className={`${
-            scrollingPage ? 'hidden lg:flex' : 'md:flex'
-          }  items-center gap-x-6`}
-        >
-          <li className="hover:text-[#54E694] transition-colors cursor-pointer py-1 pr-1">
-            Sobre
-          </li>
-          <li className="hover:text-[#54E694] transition-colors cursor-pointer py-1 pr-1">
-            Trilhas de conteúdo
-          </li>
-          <li className="hover:text-[#54E694] transition-colors cursor-pointer py-1 pr-1">
-            Projetos
-          </li>
-          <li className="hover:text-[#54E694] transition-colors cursor-pointer py-1 pr-1">
-            Educadores
-          </li>
-          <li className="hover:text-[#54E694] transition-colors cursor-pointer py-1 pr-1">
-            Dúvidas
-          </li>
-        </ul>
-        <button
-          type="button"
-          className="uppercase hidden md:block text-sm leading-5 hover:text-[#09090a] hover:bg-[#54E694] duration-300 ease-in-out transition-colors py-3 font-bold rounded-[5px] px-6 border border-[#54E694]"
-        >
-          inscreva-se {!scrollingPage && 'agora'}
-        </button>
-      </div>
-    </nav>
-  )
+  },
+  contentWrapper: (scrollingPage: boolean) => {
+    return `${
+      scrollingPage ? 'flex' : 'hidden'
+    } text-[#C4C4CC] mx-auto max-w-7xl md:px-4 lg:px-14 py-4 md:flex items-center justify-center md:justify-between`
+  },
+  contentContainer: (scrollingPage: boolean) => {
+    return `${
+      scrollingPage ? 'hidden lg:flex' : 'md:flex'
+    } items-center gap-x-6`
+  },
+  list: `hover:text-[#54E694] transition-colors cursor-pointer py-1 pr-1`,
 }

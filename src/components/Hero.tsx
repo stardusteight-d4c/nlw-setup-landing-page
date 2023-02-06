@@ -138,7 +138,7 @@ export const Hero = (props: Props) => {
                 próximo nível.
               </span>
               <div className={style.main.handleButtonAnimate(isInView)}>
-                <Button title="garantir ingresso gratuito" />
+                <Button>garantir ingresso gratuito</Button>
               </div>
             </div>
           </div>

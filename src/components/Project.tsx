@@ -6,6 +6,7 @@ import divider from '@assets/divider.svg'
 import arrowMotion from '@assets/white-arrow-motion.gif'
 import { useEffect, useRef, useState } from 'react'
 import { Button } from './integrate/Button'
+import { scrollTo } from '@/utils/scroll-to-target'
 
 interface Props {}
 
@@ -92,7 +93,14 @@ export const Project = (props: Props) => {
             className={style.handleMoileProjectImg(animateMobileProjectImg)}
           />
         </section>
-        <div className={style.dividerContainer}>
+        <div
+          onClick={() => {
+            const element: HTMLElement = document.querySelector('#highlights')!
+            const distanceFromTop = element.offsetTop - 40 
+            scrollTo(distanceFromTop, 500)
+          }}
+          className={style.dividerContainer}
+        >
           <img src={divider} className={style.divider} />
           <img src={arrowMotion} className={style.arrowDown} />
         </div>
@@ -102,7 +110,7 @@ export const Project = (props: Props) => {
 }
 
 const style = {
-  wrapper: `projectBackground bg-[#121214] w-screen h-fit`,
+  wrapper: `projectBackground bg-[#121214] max-w-screen overflow-hidden h-fit`,
   contentWrapper: `max-w-7xl mx-auto px-4 lg:px-14`,
   flexContainerFirstSection: `text-center flex flex-col items-center`,
   span: `uppercase text-sm xsm:text-base mb-4 text-[#54E694] font-medium tracking-[3px] !leading-[150%]`,

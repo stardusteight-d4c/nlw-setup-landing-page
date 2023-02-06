@@ -82,8 +82,26 @@ export const Navbar = (props: Props) => {
           >
             Projetos
           </a>
-          <a className={style.list}>Educadores</a>
-          <a className={style.list}>Dúvidas</a>
+          <a
+            onClick={() => {
+              const element: HTMLElement = document.querySelector('#educators')!
+              const distanceFromTop = element.offsetTop + 40
+              scrollTo(distanceFromTop, 500)
+            }}
+            className={style.list}
+          >
+            Educadores
+          </a>
+          <a
+            onClick={() => {
+              const element: HTMLElement = document.querySelector('#faq')!
+              const distanceFromTop = element.offsetTop - 120
+              scrollTo(distanceFromTop, 500)
+            }}
+            className={style.list}
+          >
+            Dúvidas
+          </a>
         </ul>
         <Button variant={true}>inscreva-se {!scrollingPage && 'agora'}</Button>
       </div>

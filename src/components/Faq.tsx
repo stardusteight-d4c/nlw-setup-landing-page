@@ -1,21 +1,16 @@
 import { Accordion } from './integrate/Accordion'
+import { Button } from './integrate/Button'
 
 interface Props {}
 
 export const Faq = (props: Props) => {
   return (
-    <section className="bg-[#121214] pt-[40px] pb-[140px] w-screen">
-      <div className="max-w-7xl relative grid grid-cols-1 md:grid-cols-2 items-start justify-between mx-auto px-4 lg:px-14">
-        <div className="md:sticky mb-[40px] md:mb-0 md:pr-[48px] z-50 top-[140px] col-span-1">
-          <span className="text-[#54E694] inline-block mb-4 uppercase !leading-[150%] tracking-[3px] font-medium">
-            faq
-          </span>
-          <h2 className="text-[#E1E1E6] mb-6 text-[32px] !leading-[140%] font-bold">
-            Perguntas e respostas mais frequentes
-          </h2>
-          <button className="uppercase w-full md:w-fit -mt-[2px] text-sm !leading-[0.30rem] text-[#09090a] bg-[#54E694] duration-200 ease-in-out transition-colors p-6 font-bold rounded-[5px] hover:bg-[#00da60]">
-            garantir ingresso gratuito
-          </button>
+    <section id="faq" className={style.wrapper}>
+      <div className={style.contentWrapper}>
+        <div className={style.titleContainer}>
+          <span className={style.titleSpan}>faq</span>
+          <h2 className={style.title}>Perguntas e respostas mais frequentes</h2>
+          <Button>garantir ingresso gratuito</Button>
         </div>
 
         <div>
@@ -61,4 +56,12 @@ export const Faq = (props: Props) => {
       </div>
     </section>
   )
+}
+
+const style = {
+  wrapper: `bg-[#121214] pt-[40px] pb-[140px] w-screen`,
+  contentWrapper: `max-w-7xl relative grid grid-cols-1 md:grid-cols-2 items-start justify-between mx-auto px-4 lg:px-14`,
+  titleContainer: `md:sticky mb-[40px] md:mb-0 md:pr-[48px] z-50 top-[140px] col-span-1`,
+  titleSpan: `text-[#54E694] inline-block mb-4 uppercase !leading-[150%] tracking-[3px] font-medium`,
+  title: `text-[#E1E1E6] mb-6 text-[32px] !leading-[140%] font-bold`,
 }

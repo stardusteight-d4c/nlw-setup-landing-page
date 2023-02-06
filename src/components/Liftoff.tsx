@@ -4,20 +4,20 @@ interface Props {}
 
 export const Liftoff = (props: Props) => {
   return (
-    <section className="liftoff">
-      <div className="max-w-7xl flex flex-col md:flex-row mx-auto px-4 lg:px-14">
-        <div className="md:w-[39%]">
+    <section className={style.wrapper}>
+      <div className={style.contentWrapper}>
+        <div className={style.asideLeft}>
           <img
             src={doubleQuotes}
             alt="quotes/img"
-            className="pb-[60px] mx-auto md:mx-0"
+            className={style.doubleQuotesIcon}
           />
-          <h2 className="text-2xl text-[#E1E1E6] xsm:text-[32px] font-bold !leading-[140%]">
+          <h2 className={style.title}>
             Na programação o aprendizado é contínuo e sempre haverá um próximo
             nível.
           </h2>
-          <div className="mt-6">
-            <p className="text-[#C4C4CC] !leading-[160%]">
+          <div className={style.paragraphContainer}>
+            <p className={style.paragraph}>
               É por isso que, ao final do NLW vamos abrir as matrículas para
               nossos programas pagos, o Ignite, para quem está na etapa de
               especialização, e o Explorer, para quem quer acessar sua primeira
@@ -43,10 +43,19 @@ export const Liftoff = (props: Props) => {
             </p>
           </div>
         </div>
-        <div className="text-[#996DFF] pt-[60px] md:pt-0 mx-auto md:mx-0 md:mt-auto md:ml-auto text-[30px] md:text-[40px] font-bold !leading-[125%]">
-          #neverstoplearning
-        </div>
+        <div className={style.hashtag}>#neverstoplearning</div>
       </div>
     </section>
   )
+}
+
+const style = {
+  wrapper: `liftoff`,
+  contentWrapper: `max-w-7xl flex flex-col md:flex-row mx-auto px-4 lg:px-14`,
+  asideLeft: `md:w-[39%]`,
+  doubleQuotesIcon: `pb-[60px] mx-auto md:mx-0`,
+  title: `text-2xl text-[#E1E1E6] xsm:text-[32px] font-bold !leading-[140%]`,
+  paragraphContainer: `mt-6`,
+  paragraph: `text-[#C4C4CC] !leading-[160%]`,
+  hashtag: `text-[#996DFF] pt-[60px] md:pt-0 mx-auto md:mx-0 md:mt-auto md:ml-auto text-[30px] md:text-[40px] font-bold !leading-[125%]`,
 }

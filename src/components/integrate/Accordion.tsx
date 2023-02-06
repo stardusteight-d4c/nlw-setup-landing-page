@@ -7,7 +7,7 @@ interface Props {
 }
 
 export const Accordion = ({ title, children }: Props) => {
-  const [changeStateTestAnimation, setChangeStateTestAnimation] =
+  const [changeStateIconAnimation, setChangeStateIconAnimation] =
     useState<boolean>(false)
 
   const [height, setHeight] = useState(0)
@@ -20,17 +20,17 @@ export const Accordion = ({ title, children }: Props) => {
   return (
     <div className="mb-6">
       <div
-        onClick={() => setChangeStateTestAnimation(!changeStateTestAnimation)}
+        onClick={() => setChangeStateIconAnimation(!changeStateIconAnimation)}
         className="rounded cursor-pointer flex h-[80px] px-5 items-center justify-between bg-[#202024]"
       >
         <h3 className="text-[#E1E1E6] font-semibold">{title}</h3>
         <PlusCloseIconAnimated
-          changeStateTestAnimation={changeStateTestAnimation}
+          changeStateIconAnimation={changeStateIconAnimation}
         />
       </div>
       <div
         style={{
-          maxHeight: changeStateTestAnimation ? `${height}px` : '0px',
+          maxHeight: changeStateIconAnimation ? `${height}px` : '0px',
           overflow: 'hidden',
         }}
         className="transition-all cursor-default ease-in-out duration-1000 rounded-b bg-[#20202480]"

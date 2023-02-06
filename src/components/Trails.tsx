@@ -95,10 +95,8 @@ export const Trails = (props: Props) => {
           embarcar na missão que está mais alinhada com o seu momento e objetivo
           e acelerar na direção certa.
         </span>
-
         <TrailCard {...trailCard1Props} />
         <TrailCard {...trailCard2Props} />
-
         <div className={style.divider} />
       </div>
     </section>

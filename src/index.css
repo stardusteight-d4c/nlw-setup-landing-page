@@ -141,7 +141,7 @@ body {
 .animate-about-final-state-from-top {
   transform: translate3d(0px, 0px, 0px);
   opacity: 1;
-  transition: all ease-in-out 1000ms;
+  transition: all ease-in-out 800ms;
 }
 
 .animate-trials-initial-state-from-bottom {
@@ -153,7 +153,7 @@ body {
 .animate-trials-final-state-from-bottom {
   transform: translate3d(0px, 0px, 0px);
   opacity: 1;
-  transition: all ease-in-out 1000ms;
+  transition: all ease-in-out 600ms;
 }
 
 .animate-project-paragraph-initial-state-from-left {
@@ -178,6 +178,30 @@ body {
   transform: translate3d(0px, 0px, 0px);
   opacity: 1;
   transition: all ease-in-out 800ms;
+}
+
+.animate-educators-title-initial-state-from-left {
+  transform: translate3d(-300px, 0px, 0px);
+  opacity: 0;
+  transition: all ease-in-out 0ms;
+}
+
+.animate-educators-title-final-state-from-left {
+  transform: translate3d(0px, 0px, 0px);
+  opacity: 1;
+  transition: all ease-in-out 800ms;
+}
+
+.animate-educators-person-initial-state-from-top {
+  transform: translate3d(0px, -150px, 0px);
+  opacity: 0;
+  transition: all ease-in-out 0ms;
+}
+
+.animate-educators-person-final-state-from-top {
+  transform: translate3d(0px, 0px, 0px);
+  opacity: 1;
+  transition: all ease-in-out 1000ms;
 }
 
 ::-webkit-scrollbar {

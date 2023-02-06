@@ -49,11 +49,11 @@ export const About = (props: Props) => {
         setAnimateHeadingContent(true)
         setAnimateTwilio(true)
         setAnimateButton(true)
-      }, 500)
+      }, 300)
       setTimeout(() => {
         setAnimateSponsor(true)
         setAnimateSpan(true)
-      }, 800)
+      }, 500)
     } else {
       setAnimateHeadingContent(false)
       setAnimateSponsor(false)

@@ -12,6 +12,7 @@ import divider from '@assets/divider.svg'
 import arrowMotion from '@assets/white-arrow-motion.gif'
 import { Countdown } from './integrate/Countdown'
 import { Button } from './integrate/Button'
+import { scrollTo } from '@/utils/scroll-to-target'
 
 interface Props {}
 
@@ -143,7 +144,14 @@ export const Hero = (props: Props) => {
             </div>
           </div>
         </div>
-        <div className={style.dividerContainer}>
+        <div
+          onClick={() => {
+            const element: HTMLElement = document.querySelector('#about')!
+            const distanceFromTop = element.offsetTop - (98 - 18)
+            scrollTo(distanceFromTop, 500)
+          }}
+          className={style.dividerContainer}
+        >
           <img src={divider} className={style.divider} />
           <img src={arrowMotion} className={style.arrowDown} />
         </div>

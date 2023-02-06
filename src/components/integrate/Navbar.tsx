@@ -65,7 +65,11 @@ export const Navbar = (props: Props) => {
         } text-[#C4C4CC] mx-auto max-w-7xl md:px-4 lg:px-14 py-4 md:flex items-center justify-center md:justify-between`}
       >
         {scrollingPage && <img src={nlwLogo} alt="nlw/logo" />}
-        <ul className={`${scrollingPage && '!hidden'} md:flex items-center gap-x-6`}>
+        <ul
+          className={`${
+            scrollingPage ? 'hidden lg:flex' : 'md:flex'
+          }  items-center gap-x-6`}
+        >
           <li className="hover:text-[#54E694] transition-colors cursor-pointer py-1 pr-1">
             Sobre
           </li>

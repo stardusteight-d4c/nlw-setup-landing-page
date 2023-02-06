@@ -10,6 +10,7 @@ import { useMediaQuery } from 'react-responsive'
 import divider from '@assets/divider.svg'
 import arrowMotion from '@assets/white-arrow-motion.gif'
 import { useEffect, useRef, useState } from 'react'
+import { Countdown } from './integrate/Countdown'
 
 interface Props {}
 
@@ -19,35 +20,11 @@ export const Hero = (props: Props) => {
   })
   const [isInView, setIsInView] = useState(false)
 
+  // countDown()
+
   setTimeout(() => {
     setIsInView(true)
   }, 800)
-
-
-  // const ref = useRef<HTMLButtonElement>(null)
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     if (!ref.current) {
-  //       return
-  //     }
-
-  //     const elementPosition = ref.current.offsetTop
-  //     const scrollPosition = window.pageYOffset
-  //     const windowHeight = window.innerHeight
-
-  //     if (elementPosition < scrollPosition + windowHeight) {
-  //       setIsInView(true)
-  //     } else {
-  //       setIsInView(false)
-  //     }
-  //   }
-
-  //   window.addEventListener('scroll', handleScroll)
-
-  //   return () => {
-  //     window.removeEventListener('scroll', handleScroll)
-  //   }
-  // }, [])
 
   return (
     <header className="bg-hero w-screen h-fit pb-[100px] md:max-h-fit bg-cover bg-no-repeat">
@@ -60,40 +37,7 @@ export const Hero = (props: Props) => {
               alt="nlw-setup/logo"
               className="min-w-[232px] max-w-[232px] md:min-w-[336px] md:max-w-[336px] h-auto"
             />
-            <div className="flex items-center gap-x-4 md:gap-x-8 justify-center mt-8 md:mt-10">
-              <div className="flex flex-col items-center justify-center">
-                <div className="bg-[#121214] w-fit h-fit py-3 px-2 text-2xl tracking-[3px] rounded font-semibold !leading-6">
-                  00
-                </div>
-                <span className="mt-1 text-[#C4C4CC] uppercase font-jetBrainsMono tracking-[1.5px] !leading-5 text-xs">
-                  dias
-                </span>
-              </div>
-              <div className="flex flex-col items-center justify-center">
-                <div className="bg-[#121214] w-fit h-fit py-3 px-2 text-2xl tracking-[3px] rounded font-semibold !leading-6">
-                  00
-                </div>
-                <span className="mt-1 text-[#C4C4CC] uppercase font-jetBrainsMono tracking-[1.5px] !leading-5 text-xs">
-                  horas
-                </span>
-              </div>
-              <div className="flex flex-col items-center justify-center">
-                <div className="bg-[#121214] w-fit h-fit py-3 px-2 text-2xl tracking-[3px] rounded font-semibold !leading-6">
-                  00
-                </div>
-                <span className="mt-1 text-[#C4C4CC] uppercase font-jetBrainsMono tracking-[1.5px] !leading-5 text-xs">
-                  min
-                </span>
-              </div>
-              <div className="flex flex-col items-center justify-center">
-                <div className="bg-[#121214] w-fit h-fit py-3 px-2 text-2xl tracking-[3px] rounded font-semibold !leading-6">
-                  00
-                </div>
-                <span className="mt-1 text-[#C4C4CC] uppercase font-jetBrainsMono tracking-[1.5px] !leading-5 text-xs">
-                  seg
-                </span>
-              </div>
-            </div>
+            <Countdown />
           </div>
           <div className="text-center w-full md:text-left flex-grow">
             <h2 className="text-3xl md:text-5xl !leading-[125%] font-bold">

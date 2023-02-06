@@ -94,13 +94,13 @@ body {
   background-repeat: no-repeat;
 }
 
-.animate-initial-state-from-top {
+.animate-button-initial-state-from-top {
   opacity: 0;
   transform: translate3d(0px, -50px, 0px);
   transition: 500ms;
 }
 
-.animate-final-state-from-top  {
+.animate-button-final-state-from-top {
   opacity: 1;
   transform: translate3d(0px, 0px, 0px);
   transition: 500ms;
@@ -111,9 +111,21 @@ body {
   transition: transform 500ms;
 }
 
-.animate-nav-final-state-from-top  {
+.animate-nav-final-state-from-top {
   transform: translate3d(0px, 0px, 0px);
   transition: transform 500ms;
+}
+
+.animate-hero-item-initial-state-from-top {
+  transform: translate3d(0px, -200px, 0px);
+  opacity: 0;
+  transition: all 800;
+}
+
+.animate-hero-item-final-state-from-top {
+  transform: translate3d(0px, 0px, 0px);
+  opacity: 1;
+  transition: all 800ms;
 }
 
 ::-webkit-scrollbar {

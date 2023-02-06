@@ -17,7 +17,7 @@ interface Props {}
 
 export const App = (props: Props) => {
   return (
-    <main className="max-w-screen">
+    <main className='max-w-[100vw]'>
       <Hero />
       <About />
       <Trails />

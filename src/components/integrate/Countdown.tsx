@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { countDown } from '../utils/countdown'
+import { countDown } from '../../utils/countdown'
 
 interface Props {}
 

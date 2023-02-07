@@ -1,4 +1,4 @@
-# Nike Store | Clean Architecture, Stripe API & Redux
+# Nlw Setup | Intersection Observer API
 
 ![banner](banner.png)
 

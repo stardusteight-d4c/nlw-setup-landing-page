@@ -1,4 +1,4 @@
-# Nlw Setup | Intersection Observer API
+# NLW Setup | Intersection Observer API
 
 ![banner](banner.png)
 

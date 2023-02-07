@@ -153,7 +153,7 @@ const style = {
 
 Marquee is an animation technique that consists of making elements move from one side to the other on the screen. `It's a good choice for drawing attention to important messages or highlighting elements on the page`. In HTML, it is possible to implement a Marquee using CSS styles.
 
- - sticky
+ - Sticky
 
 Sticky is a feature that allows you to stick elements on the page, `so that they are visible even when the user scrolls the page`. This is useful for navigation bars, headers, and other elements that must be visible no matter where the user is on the page. In React, it is possible to implement Sticky using CSS styles and DOM manipulation.
 

@@ -2,7 +2,7 @@
 
 ![banner](banner.png)
 
-> Development of a web landing page. This project was developed following the layout of the Landing Page of the Rocketseat NlW Setup Event, and
+> Development of a web landing page, this project was developed following the layout of the Landing Page of the Rocketseat NlW Setup Event, and
 > aims to create an attractive and functional web interface for the presentation of a product or service. For this, the following were used:
 > tools and/or utilities: `Sticky`: to fix elements on the screen during scrolling, such as a navigation menu or a call to action. `Accordion`: 
 > to show and hide information in a list in an interactive and organized way. `Parallax`: to create a 3D visual effect with layers of elements 

@@ -14,6 +14,7 @@
 
 :arrow_right: Intersection Observer API <br /> 
 :arrow_right: Effects and Layout Elements <br /> 
+:arrow_right: Flex and Grid Containers <br />
 
 <br />
 
@@ -166,3 +167,17 @@ Accordion is a feature that allows you to show and hide content in an animated w
 Parallax is an animation technique that `consists of creating a sense of depth on the page, making elements have different movements when the user scrolls the page`. It's a good choice for creating interactive and engaging pages. In React, it is possible to implement a Parallax using CSS styles and DOM manipulation.
 
 In summary, CSS and JS offer a number of advanced features that allow you to create interactive and engaging pages. Combining CSS styling, DOM manipulation with CSS and JS makes it possible to create cool animations in fully native ways.
+
+<br />
+
+## Flex and Grid Containers
+
+Flexbox and Grid Container are two ways to create responsive and adaptive layouts on the web. Both provide developers with an easy and intuitive way to control the placement of elements on a page.
+
+Flexbox is used to create one-dimensional layouts such as navigation bars, item lists, and other linear elements. It's a good choice for arranging elements in a row or column, adjusting their size, and aligning their content.
+
+The Grid Container is used to create two-dimensional layouts, that is, it allows controlling the arrangement of elements in rows and columns. It is ideal for building more complex structures such as tables, grids, and other types of grid content.
+
+`Both containers have flexible properties that allow you to control the spacing, alignment and distribution of elements`. They also support other layout technologies, such as media queries, which allow you to create layouts that adapt to different screen sizes and resolutions.
+
+`In summary, Flexbox and Grid Container are powerful and versatile tools for creating adaptive layouts on the web`. When choosing between them, it is important to consider the needs of the project and the type of layout you want to create. By mastering them, developers can create web interfaces that are attractive, functional and accessible to all users.

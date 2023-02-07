@@ -143,6 +143,26 @@ const style = {
   },
 }
 ```
-
 *<i>developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API</i> <br />
 
+<br />
+
+## Effects and Layout Elements
+
+ - Marquee
+
+Marquee is an animation technique that consists of making elements move from one side to the other on the screen. `It's a good choice for drawing attention to important messages or highlighting elements on the page`. In HTML, it is possible to implement a Marquee using CSS styles.
+
+ - sticky
+
+Sticky is a feature that allows you to stick elements on the page, `so that they are visible even when the user scrolls the page`. This is useful for navigation bars, headers, and other elements that must be visible no matter where the user is on the page. In React, it is possible to implement Sticky using CSS styles and DOM manipulation.
+
+ - Accordion
+
+Accordion is a feature that allows you to show and hide content in an animated way. `It's a good option for presenting information in an organized and clear way, saving space on the page`. In React, it is possible to implement an Accordion using components and state management.
+
+ - Parallax
+
+Parallax is an animation technique that `consists of creating a sense of depth on the page, making elements have different movements when the user scrolls the page`. It's a good choice for creating interactive and engaging pages. In React, it is possible to implement a Parallax using CSS styles and DOM manipulation.
+
+In summary, CSS and JS offer a number of advanced features that allow you to create interactive and engaging pages. Combining CSS styling, DOM manipulation with CSS and JS makes it possible to create cool animations in fully native ways.

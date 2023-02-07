@@ -13,10 +13,7 @@
 > to action for the visitor.
 
 :arrow_right: Intersection Observer API <br /> 
-:arrow_right: Marquee <br /> 
-:arrow_right: Sticky <br /> 
-:arrow_right: Accordion <br />
-:arrow_right: Parallax <br />
+:arrow_right: Effects and Layout Elements <br /> 
 
 <br />
 

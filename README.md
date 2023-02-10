@@ -182,4 +182,5 @@ The Grid Container is used to create two-dimensional layouts, that is, it allows
 
 `In summary, Flexbox and Grid Container are powerful and versatile tools for creating adaptive layouts on the web`. When choosing between them, it is important to consider the needs of the project and the type of layout you want to create. By mastering them, developers can create web interfaces that are attractive, functional and accessible to all users.
 
-![showcase](showcase.png)
+![showcase](/showcases/showcase.png)
+

@@ -47,6 +47,6 @@ Accordion is a feature that allows you to show and hide content in an animated w
 
 Parallax is an animation technique that consists of creating a sense of depth on the page, making elements have different movements when the user scrolls the page. It's a good choice for creating interactive and engaging pages. In React, it is possible to implement a Parallax using CSS styles and DOM manipulation.
 
-![screen](/screens/screen-desktop.png)
+![screen](./screenshots/screen-desktop.png)
 
 <p align="center">Project made with :blue_heart: by <a href="https://github.com/stardusteight-d4c">Gabriel Sena</a></p>
